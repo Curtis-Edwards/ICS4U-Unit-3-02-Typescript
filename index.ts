@@ -24,7 +24,7 @@ function factorial(someInt: number): number {
 }
 
 const userInput = createPrompt(`Entered = `)
-const someInt = userInput.value
+const someInt = parseInt(userInput.value)
 let factorialOfInt = factorial(someInt)
 console.log(`Returned = ${factorialOfInt}`)
 
