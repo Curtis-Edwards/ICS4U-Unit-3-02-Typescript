@@ -6,6 +6,8 @@
 * @since   2024-04-24
 */
 
+import { createPrompt } from 'bun-promptx'
+
 function factorial(someInt: number): number {
   /*
   * This funtion calculates the fartorial using recursion.
@@ -23,7 +25,7 @@ function factorial(someInt: number): number {
 
 const userInput = createPrompt(`Entered = `)
 const someInt = userInput.value
-let factorialOfInt = reverseString(someInt)
+let factorialOfInt = factorial(someInt)
 console.log(`Returned = ${factorialOfInt}`)
 
 console.log(`\nDone.`)
