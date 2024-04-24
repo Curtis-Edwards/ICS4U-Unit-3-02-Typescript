@@ -15,7 +15,7 @@ function factorial(someInt: number): number {
   if (someInt < 0) {
     return -1
   } else {
-    if (someInt === 1) {
+    if (someInt < 1) {
       return 1
     } else {
       return (someInt * factorial(someInt - 1))
