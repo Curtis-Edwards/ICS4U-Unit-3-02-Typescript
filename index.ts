@@ -10,7 +10,7 @@ import { createPrompt } from 'bun-promptx'
 
 function factorial(someInt: number): number {
   /*
-  * This funtion calculates the fartorial using recursion.
+  * This function calculates the factorial using recursion.
   */
   if (someInt < 0) {
     return -1
